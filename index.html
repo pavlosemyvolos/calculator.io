@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МКР№2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Модульна контрольна робота №2</h1>
+    <h2>Виконав студент групи АнД-31 Семиволос Павло</h2>
+    <div class="task">
+        <ul>
+            <li>Адаптивність - CSS3 flexbox</li>
+            <li>Описати клас для арифметичних операцій над звичайними дробами. Дріб задається чисельником і знаменником.<br>Результат також виводиться у вигляді дроба.</li>
+            <li>Передбачити на сторінці поля для введення інформації та елементи для виведення інформації.</li>
+            <li>Результати роботи Javascript необхідно вивести на веб сторінку</li>
+        </ul>
+    </div>
+        <div class="calculator">
+            <input type="number" id="numerator1" placeholder="Чисельник дроби 1">
+            -----------------------------------
+            <input type="number" id="denominator1" placeholder="Знаменник дроби 1">
+            <br>
+            <input type="number" id="numerator2" placeholder="Чисельник дроби 2">
+            -----------------------------------
+            <input type="number" id="denominator2" placeholder="Знаменник дроби 2">
+            <br>
+            <select id="operation">
+                <option value="add">Додавання (+)</option>
+                <option value="subtract">Віднімання (-)</option>
+                <option value="multiply">Множення (*)</option>
+                <option value="divide">Ділення (/)</option>
+            </select>
+            <br>
+            <button onclick="calculate()">Обчислити</button>
+        </div>
+    
+        <div class="result">
+            <p id="result"></p>
+        </div>
+</body>
+</html>
